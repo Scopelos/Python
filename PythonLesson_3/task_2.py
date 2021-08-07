@@ -1,9 +1,6 @@
-def u_data(u_name, u_tel):
-    u_name = input("Введите ваше имя: ")
-    u_tel = input("Введите ваш телефон: ")
-    return u_name, u_tel
+def user_data(**kwargs):
+    return kwargs
 
-print(u_data("", ""))
+print (user_data(Имя_ользователя=input("Введите Ваше имя: "), Телефон_пользователя=input("Введите Ваш номер телефона: ")))
 
-user_name, user_tel = u_data
-print(f"Имя пользователя - {user_name}; Телефон пользователя - {u_data}")
+print("Et cetera")
